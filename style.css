@@ -1,0 +1,28 @@
+* {
+    font-family: Zen Maru Gothic, sans-serif;
+    background-color: #fafafa;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.blog-posts section {
+    flex-grow: 1;
+    display: flex;
+    flex-basis: 0; /* makes it so the text doesn't auto-expand to whatever space, makes it so its even */
+    border-radius: 20px; /*rounded corners*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+    gap: 55px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.navigation {
+    position: sticky;
+}

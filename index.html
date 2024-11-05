@@ -4,75 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Nguyen's Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>jessica nguyen's blog</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a title="home" href="/index.html">home</a></li>
-            <li><a title="learn more about me!" href="/about.html">about</a></li>
-            <li><a title="contact me!" href="/contact.html">contact</a></li>
-        </ul>
-    </nav>
+    <div class="navigation">
+        <header>
+            <h1>jessica nguyen's blog</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a title="home" href="/index.html">home</a></li>
+                <li><a title="learn more about me!" href="/about.html">about</a></li>
+                <li><a title="contact me!" href="/contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-    <section>
-        <h2>blog posts</h2>
-        <article class="blog-post">
-            <img src="/images/image2.jpg" alt="a cartoon cat and bear in cold weather attire, eating dumplings">
-            <h3>it's getting colder!</h3>
-            <b>published:</b> <time datetime="2024-10-10">10/10/24</time> <address class="author"><a rel="author" href="/index.html">jessica nguyen</a></address>
-            <p>here in michigan, it's finally been starting to get cold! personally, i have never been a fan of hot weather; i hate the feeling of sweat and just being in an indefinite state of being hot. you can shed layer after layer, but the heat will still reach you; whereas if you're cold, you can keep bundling until you're warm.</p>
-            <p>anyhow, it’s dipping into 60s! and amazingly, the sky has been super clear with the sun shining brightly (pinkies crossed). the air is crisp, the leaves are changing, i get to wear more of my clothes catered to colder weather, and festivities and scents signature to fall make everything feel 10x better! in previous years, i considered spring to be my favorite season due to the beauty of the flora blooming after being gone for months on end, and a sign of warmer weather to come. however, this period has been making me rethink my favorite season to be fall instead; if not, perhaps both spring and fall will be my favorite seasons together.</p>
-            <p>despite the beauty of fall, i feel like it brings a bittersweet feeling as well. knowing that after the leaves change, they leave behind barren husks of flora; the sun doesn't appear as often; and despite how beautiful winter snow is, it starts to become a problem and hinderance (in fact, last year's winter, my car battery went badfrom the cold and wouldn't turn on Q_Q). however, i try to focus on the present beauty and leave these emotions for later. let's enjoy this beautiful fall!</p>
-            <table>
-                <tr>
-                    <th>Date</th>
-                    <th>Highest Temperature</th>
-                    <th>Lowest Temperature</th>
-                </tr>
-                <tr>
-                    <td><time datetime="2024-10-20">10/20/24</time></td>
-                    <td>75°</td>
-                    <td>55°</td>
-                </tr>
-                <tr>
-                    <td><time datetime="2024-10-21">10/21/24</time></td>
-                    <td>78°</td>
-                    <td>52°</td>
-                </tr>
-                <tr>
-                    <td><time datetime="2024-10-22">10/22/24</time></td>
-                    <td>75°</td>
-                    <td>58°</td>
-                </tr>
-                <tr>
-                    <td><time datetime="2024-10-23">10/23/24</time></td>
-                    <td>62°</td>
-                    <td>36°</td>
-                </tr>
-                <tr>
-                    <td><time datetime="2024-10-24">10/24/24</time></td>
-                    <td>59°</td>
-                    <td>42°</td>
-                </tr>
-                <tr>
-                    <td><time datetime="2024-10-25">10/25/24</time></td>
-                    <td>65°</td>
-                    <td>43°</td>
-                </tr>
-            </table>
-        </article>
-        <article class="blog-post">
-            <img src="/images/image1.jpg" alt="a cartoon bear laid on its side holding a chocolate-covered strawberry">
-            <h3>snacking on chocolate-covered strawberries</h3>
-            <b>published:</b> <time datetime="2024-10-10">10/10/24</time> <address class="author"><a rel="author" href="/index.html">jessica nguyen</a></address>
-            <p>for a long time now, i've been absolutely obsessed with chocolate-covered strawberries! they are one of my most favorite ever snacks/sweet treats. they contrast each other so well: the refreshing sweet taste of a fruit, complemented by the thick sweet chocolate. although i am not the best at describing it, i still stand by the fact that it's a taste to die for.</p>
-            <p>if i'm not making them from scratch myself, i usually get mine frozen from a brand called tru fru! they have a lot of fruit-centered snacks, but of course, i love their milk-chocolate covered strawberries the most. i discovered them when i was at target with my boyfriend: we were looking in the frozen aisle for some treats until a person came rushing over to the same section as us. as she faced the section, she excitedly shouted, "here they are!" and reached in for one of the packs of frozen treats from tru fru. soon enough, her friend followed behind and funnily rebutted, "this is what we came here for?" in which the original person said, "yes! these are so good you don't understand." after seeing that exchange, my curiousity was piqued, and i grabbed a pack for myself. there were two to choose from: chocolate-covered raspberries or strawberries, but i chose the latter since it is one of my favorite fruits.</p>
-            <p>and the rest is history! i honestly haven't gotten sick of them at all, which surprises me. sure, i'll have a week or so break from eating them, but i always crawl back at the end.</p>
-        </article>
-    </section>
+    <h2>blog posts</h2>
+    <div class="blog-posts">
+        <section>
+            <article class="post">
+                <img src="/images/image2.jpg" alt="a cartoon cat and bear in cold weather attire, eating dumplings">
+                <h3>it's getting colder!</h3>
+                <b>published:</b> <time datetime="2024-10-10">10/10/24</time> <address class="author"><a rel="author" href="/index.html">jessica nguyen</a></address>
+                <p>here in michigan, it's finally been starting to get cold! personally, i have never been a fan of hot weather; i hate the feeling of sweat and just being in an indefinite state of being hot. you can shed layer after layer, but the heat will still reach you; whereas if you're cold, you can keep bundling until you're warm.</p>
+                <p>anyhow, it’s dipping into 60s! and amazingly, the sky has been super clear with the sun shining brightly (pinkies crossed). the air is crisp, the leaves are changing, i get to wear more of my clothes catered to colder weather, and festivities and scents signature to fall make everything feel 10x better! in previous years, i considered spring to be my favorite season due to the beauty of the flora blooming after being gone for months on end, and a sign of warmer weather to come. however, this period has been making me rethink my favorite season to be fall instead; if not, perhaps both spring and fall will be my favorite seasons together.</p>
+                <p>despite the beauty of fall, i feel like it brings a bittersweet feeling as well. knowing that after the leaves change, they leave behind barren husks of flora; the sun doesn't appear as often; and despite how beautiful winter snow is, it starts to become a problem and hinderance (in fact, last year's winter, my car battery went badfrom the cold and wouldn't turn on Q_Q). however, i try to focus on the present beauty and leave these emotions for later. let's enjoy this beautiful fall!</p>
+                <table>
+                    <tr>
+                        <th>Date</th>
+                        <th>Highest Temperature</th>
+                        <th>Lowest Temperature</th>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2024-10-20">10/20/24</time></td>
+                        <td>75°</td>
+                        <td>55°</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2024-10-21">10/21/24</time></td>
+                        <td>78°</td>
+                        <td>52°</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2024-10-22">10/22/24</time></td>
+                        <td>75°</td>
+                        <td>58°</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2024-10-23">10/23/24</time></td>
+                        <td>62°</td>
+                        <td>36°</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2024-10-24">10/24/24</time></td>
+                        <td>59°</td>
+                        <td>42°</td>
+                    </tr>
+                    <tr>
+                        <td><time datetime="2024-10-25">10/25/24</time></td>
+                        <td>65°</td>
+                        <td>43°</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="post">
+                <img src="/images/image1.jpg" alt="a cartoon bear laid on its side holding a chocolate-covered strawberry">
+                <h3>snacking on chocolate-covered strawberries</h3>
+                <b>published:</b> <time datetime="2024-10-10">10/10/24</time> <address class="author"><a rel="author" href="/index.html">jessica nguyen</a></address>
+                <p>for a long time now, i've been absolutely obsessed with chocolate-covered strawberries! they are one of my most favorite ever snacks/sweet treats. they contrast each other so well: the refreshing sweet taste of a fruit, complemented by the thick sweet chocolate. although i am not the best at describing it, i still stand by the fact that it's a taste to die for.</p>
+                <p>if i'm not making them from scratch myself, i usually get mine frozen from a brand called tru fru! they have a lot of fruit-centered snacks, but of course, i love their milk-chocolate covered strawberries the most. i discovered them when i was at target with my boyfriend: we were looking in the frozen aisle for some treats until a person came rushing over to the same section as us. as she faced the section, she excitedly shouted, "here they are!" and reached in for one of the packs of frozen treats from tru fru. soon enough, her friend followed behind and funnily rebutted, "this is what we came here for?" in which the original person said, "yes! these are so good you don't understand." after seeing that exchange, my curiousity was piqued, and i grabbed a pack for myself. there were two to choose from: chocolate-covered raspberries or strawberries, but i chose the latter since it is one of my favorite fruits.</p>
+                <p>and the rest is history! i honestly haven't gotten sick of them at all, which surprises me. sure, i'll have a week or so break from eating them, but i always crawl back at the end.</p>
+            </article>
+        </section>
+    </div>
     <section>
         <h2>newsletter</h2>
         <form>
