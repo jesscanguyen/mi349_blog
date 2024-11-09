@@ -2,6 +2,8 @@
 
 * {
     font-family: Zen Maru Gothic, sans-serif;
+    background-color: #fafafa;
+
 }
 
 main {
@@ -12,7 +14,28 @@ img {
     border-radius: 20px;
 }
 
-/* top navigation bar */
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+} /*basically container margins*/
+
+p, h1, h2, h3, a[href], li, th, td {
+    color: #403744;
+}
+
+p, li {
+    font-size: 0.9em; /* make text not as to the right and smaller font size */
+}
+
+
+                                                /*   ‧₊ ˚  ⊹ ࣭ ⭑ . ₊ ⊹ .₊๋
+                                                EDITING SPECIFIC PAGES/ITEMS 
+                                                  ‧₊ ˚  ⊹ ࣭ ⭑ . ₊ ⊹ .₊๋
+                                                */
+
+
+
+/* navigation bar stuff */
 .navigation {
     position: -webkit-sticky;
     position: sticky;
@@ -21,20 +44,51 @@ img {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2% 0;
     background-color: #fafafa;
+    font-weight: 500;
+}
+
+#jessica-link {
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex; /* make links horizontal and no bullet */
+}
+
+.nav-links li{
+    margin-right: 20px; /* adds space between each link */
+}
+
+.nav-links li a {
+    text-decoration: none; /* remove underline from links */
+}
+
+.nav-links li a:hover {
+    text-decoration: underline dotted;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 3px;
+}
+
+/* current page link deco */
+#current {
+    text-decoration: underline dotted;
+    text-underline-offset: 9px;
+    text-decoration-thickness: 3px;
+    font-weight: bolder;
+    color: red;
 }
 
 /* index styling */
+
 .blog-posts section {
     display: flex;
     flex-basis: 0;
     border-radius: 20px;
     margin-top: 1%;
-    margin-bottom: 5%;
-    gap: 3%;
-    padding-left: 2%;
-    padding-right: 2%;
+    gap: 6%;
+    flex-direction: row;
 }
 
 article.post {
@@ -42,9 +96,22 @@ article.post {
 }
 
 article p{
-    padding-right: 10%;
+    padding-right: 15%;
 }
 
-h2.test {
-    padding-left: 2%
+a[rel="author"] {
+    color: #C3596A; /* Set the color or any other styling you want */
+    font-weight: bold; /* Optional: make the author's name bold */
+}
+
+/* about page */
+.image-container {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* footer styling */
+footer {
+    margin-top: 3%;
 }
