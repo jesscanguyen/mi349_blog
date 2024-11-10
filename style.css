@@ -2,7 +2,7 @@
 
 basic colors:
 - white: #fafafa
-- text (dark purple): #403744
+- text (dark brown): #714342
 - accent: #A64A66
 
 /* 
@@ -12,7 +12,7 @@ basic colors:
 
 
 html {
-    background: url("images/grid.png");
+    background: url("images/yayyyyy.png");
     font-family: Zen Maru Gothic, sans-serif;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
@@ -30,8 +30,9 @@ html {
 }
 
 img {
-    border: 9px solid transparent;
-    border-image: url(https://solaria.neocities.org/bits/darkgreylace.png) 17 round; 
+border-width: 10px;
+border-style:solid;
+border-image: url("images/border.png") 8 fill round;
 }
 
 body {
@@ -52,6 +53,7 @@ p, li {
     padding-left: 10%;
     padding-right: 10%;
     border-radius: 20px;
+    border: 2px dashed #908680;
 }
 
 
@@ -60,6 +62,7 @@ p, li {
 
 
 /* navigation bar stuff */
+
 .navigation {
     position: -webkit-sticky;
     position: sticky;
@@ -71,6 +74,7 @@ p, li {
     background-color: #fafafa;
     font-weight: 500;
     z-index: 99;
+    border-radius: 8px;
 }
 
 #jessica-link {
@@ -108,50 +112,42 @@ p, li {
 }
 
 /* index styling */
-.blog-posts {
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-}
 
 .blog-posts section {
     display: flex;
     flex-basis: 0;
     margin-top: 1%;
     gap: 6%;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 article.post {
     flex: 1;
-
+    margin-bottom: 4%;
 }
 
-article img {
-    width: 85%;
+article img.left-floating {
+    width: 45%;
     align-items: center;
+    float: left;
+    rotate: -2deg;
+    margin-top: 4%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
 }
 
-article p {
-    padding-right: 10%;
+article img.right-floating {
+    width: 45%;
+    align-items: center;
+    float: right;
+    rotate: 2deg;
+    margin-top: 4%;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+
 }
-
-/* this @media part and the 2 rules following it was made by chatgpt, helps with responsive design in smaller browser for blog posts */
-@media (max-width: 768px) {
-    .blog-posts section {
-        flex-direction: column; /* Change from row to column */
-        align-items: center; /* Center-align items */
-    }
-
-    article img {
-        width: 100%; /* Make images full-width within the container */
-        max-width: 400px; /* Limit max width */
-    }
-
-    article p {
-        padding-right: 0; /* Adjust padding */
-    }
-}
-
 
 a[rel="author"] {
     color: #A64A66; /* Set the color or any other styling you want */
@@ -165,6 +161,10 @@ table {
     padding: 3%;
     margin-top: 30px;
     background-color: #fafafa;
+    width: 40%;
+    position: relative;
+    left: 60px;
+    text-align: center;
 }
 
 td {
@@ -173,12 +173,12 @@ td {
 }
 
 
-
 /* about page */
 #image-container {
     float: left;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    rotate: -2deg;
 }
 
 .interests {
@@ -194,6 +194,7 @@ td {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
+    margin-left: 20%;
 }
 
 @keyframes hovering {
@@ -210,8 +211,60 @@ td {
     }
 }
 
+
+/* forms and stuff, code by w3schools */
+input[type=text], textarea {
+    border: 2px solid #908680;
+    border-radius: 4px;
+    width: 100%;
+    padding: 9px 10px;
+
+  }
+
+textarea {
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #908680;
+    border-radius: 4px;
+    background-color: #fafafa;
+    resize: none;
+  }
+
+select {
+    width: 100%;
+    padding: 9px 10px;
+    border: 2px solid #908680;
+    border-radius: 4px;
+    background-color: #fafafa;
+}
+
+button {
+    background-color: #fbe8ec;
+    border: none;
+    color: #714342;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+
 /* footer styling */
 footer {
-    margin-top: 3%;
+    margin-top: 4%;
     padding-bottom: 30px;
 }
+
+
+/* .sticker1{
+    width: 200px;
+    height: 200px;
+    background: url(images/sleepyMiffy.png);
+    position: absolute;
+    z-index: 98;
+    right: 10%;
+    bottom: 0;
+
+} */
